@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Group1_Part3_HW3.Class
 {
     // Define concrate class Book
-    public class Book : Product
+    public class Book : IProduct
     {
         public string Title { get; set; }
         public string Author { get; set; }
@@ -21,7 +21,7 @@ namespace Group1_Part3_HW3.Class
             Pages = pages;
         }
 
-        public override void PrintAll()
+        public void PrintAll()
         {
             Console.WriteLine($"Book: {Title} by {Author}, {Pages} pages");
         }

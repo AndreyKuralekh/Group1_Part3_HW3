@@ -10,6 +10,6 @@ namespace Group1_Part3_HW3.Class
     public abstract class Factory
     {
         // Define abstract method CreateProduct
-        public abstract Product CreateProduct();
+        public abstract IProduct CreateProduct();
     }
 }

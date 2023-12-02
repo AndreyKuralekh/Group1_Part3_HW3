@@ -20,7 +20,7 @@ namespace Group1_Part3_HW3.Class
             this.rating = rating;
         }
 
-        public override Product CreateProduct()
+        public override IProduct CreateProduct()
         {
             return new Game(name, genre, rating);
         }

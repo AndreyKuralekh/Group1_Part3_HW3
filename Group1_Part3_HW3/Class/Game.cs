@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Group1_Part3_HW3.Class
 {
-    public class Game : Product
+    public class Game : IProduct
     {
         public string Name { get; set; }
         public string Genre { get; set; }
@@ -21,7 +21,7 @@ namespace Group1_Part3_HW3.Class
         }
 
         // Method for printing products
-        public override void PrintAll()
+        public void PrintAll()
         {
             Console.WriteLine($"Game: {Name}, {Genre}, {Rating} stars");
         }

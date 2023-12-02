@@ -20,7 +20,7 @@ namespace Group1_Part3_HW3.Class
             this.pages = pages;
         }
 
-        public override Product CreateProduct()
+        public override IProduct CreateProduct()
         {
             return new Book(title, author, pages);
         }
